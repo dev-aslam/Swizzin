@@ -1,14 +1,22 @@
+//NavBar Selector
 const navbar = document.querySelector('.navbar');
 const navbarCollapsed = document.querySelector('.offcanvas');
 
+//Github Icons(2 Icon)
 const gitdark = document.querySelectorAll('.github-dark');
 const gitlight = document.querySelectorAll('.github-light');
 
+//Navbar Collapsed Cross icon
 const crosslight = document.querySelector('.cross-light');
 const crossdark = document.querySelector('.cross-dark');
 
+//Dark and light mode icons
 const lightMode = document.querySelectorAll('.lightToggleIcon');
 const darkMode = document.querySelectorAll('.darkToggleIcon');
+
+//Body Dark and dark mode
+const bodylightShade = document.querySelectorAll('.section-light');
+const bodyDarkShade = document.querySelectorAll('.section-dark');
 
 function darkLightToggler(){
     if(navbar.classList.contains('navbar-dark')){
@@ -32,6 +40,14 @@ function darkLightToggler(){
         darkMode.forEach(element => {
             element.classList.add('display-none');
         });
+
+        bodylightShade.forEach(element => {
+            element.classList.remove('dark-mode-light');
+        });
+
+        bodyDarkShade.forEach(element => {
+            element.classList.remove('dark-mode-dark');
+        });
     }
     else{
         navbar.classList.add('navbar-dark');
@@ -52,6 +68,14 @@ function darkLightToggler(){
 
         darkMode.forEach(element => {
             element.classList.remove('display-none');
+        });
+
+        bodylightShade.forEach(element => {
+            element.classList.add('dark-mode-light');
+        });
+
+        bodyDarkShade.forEach(element => {
+            element.classList.add('dark-mode-dark');
         });
     }
 }

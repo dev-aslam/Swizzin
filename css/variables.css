@@ -1,5 +1,6 @@
 :root{
-    --background-body-light:#FBFBFB;
+    --background-body-lightMode-light:#FBFBFB;
+    --background-body-lightMode-dark:#F0F0F0;
     --background-nav-light:#F0F0F0;
     --text-color-light:#1C1E21;
     --mainheading-color-light:#444950;
@@ -8,7 +9,8 @@
     --footer-text-light:#606770;
     --toggler-button-light:#484d5b;
 
-    --background-body-dark:#011627;
+    --background-body-dark-light:#011627;
+    --background-body-dark-dark:#010D18;
     --background-nav-dark:#010D18;
     --mainheading-color-dark:#EBEDF0;
     --main-text-color-dark:#EBEDF0;
@@ -25,9 +27,15 @@
     --heading-text-size:44.8px;
     --font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
-    --xx-large-gap:80px;
+    --xxx-large-gap:80px;
+    --xx-large-gap:64px;
     --x-large-gap:48px;
     --large-gap:32px;
     --medium-gap:16px;
     --small-gap:8px;
+
+    --background-btn-green:#21c7a8;
+    --background-btn-blue:#82aaff;
+    --background-btn-green-hover:#1eb397;
+    --background-btn-blue-hover:#4cb3d4;
 }

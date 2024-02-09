@@ -37,3 +37,31 @@
 .navbar-dark .navbar-toggler svg{
     color: var(--toggler-button-dark);
 }
+
+
+/* ======== NAVBAR END=======*/
+
+/* ======= Main Content ======= */
+.section-light.dark-mode-light{
+    background-color: var(--background-body-dark-light);
+}
+
+.section-light.dark-mode-dark{
+    background-color: var(--background-body-dark-dark);
+}
+
+/* Head Section*/
+
+.dark-mode-light .green-btn,
+.dark-mode-light .blue-btn{
+    color: var(--button-text-dark);
+}
+
+#head-section.dark-mode-light h1,
+#head-section.dark-mode-light p{
+    color: var(--mainheading-color-dark);
+}
+
+.dark-mode-light .head-image-container::after{
+    background-color: var(--background-body-dark-dark);
+}
