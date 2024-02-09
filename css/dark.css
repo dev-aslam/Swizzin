@@ -46,7 +46,7 @@
     background-color: var(--background-body-dark-light);
 }
 
-.section-light.dark-mode-dark{
+.section-dark.dark-mode-dark{
     background-color: var(--background-body-dark-dark);
 }
 
@@ -65,3 +65,5 @@
 .dark-mode-light .head-image-container::after{
     background-color: var(--background-body-dark-dark);
 }
+
+/* Feature Section*/

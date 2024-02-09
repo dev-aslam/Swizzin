@@ -23,7 +23,7 @@
     --secondary-color:#24DBB9;
     
     --normal-text-size:16px;
-    --sub-headinng-text-size:20px;
+    --sub-heading-text-size:20px;
     --heading-text-size:44.8px;
     --font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
@@ -38,4 +38,16 @@
     --background-btn-blue:#82aaff;
     --background-btn-green-hover:#1eb397;
     --background-btn-blue-hover:#4cb3d4;
+}
+
+@media screen and (max-width:576px) {
+    :root{
+        --heading-text-size:32px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    :root{
+        --xxx-large-gap:40px;
+    }
 }
