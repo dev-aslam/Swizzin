@@ -73,7 +73,15 @@
     opacity: 0.5;
 }
 
+.toggle-dark-light button{
+    background: transparent;
+}
+
 /*Navbar collapse*/
+
+.navbar-toggler{
+    color: var(--toggler-button-light);
+}
 
 @media screen and (max-width: 992px){
     .navbar{
@@ -90,7 +98,6 @@
         display: none;
     }
 }
-
 
 .offcanvas.offcanvas-start{
     width: 82%;
@@ -114,4 +121,9 @@
 .nav-item .nav-link img{
     height: 24px;
     width: 24px;
+}
+
+.btn-close.text-reset{
+    width: auto;
+    height: auto;
 }

@@ -10,11 +10,30 @@
     color: var(--text-color-dark);
 }
 
-.github-display{
+.display-none{
     display: none;
 }
 
 .darkToggleIcon{
-    display: none;
+    color: var(--toggler-button-dark);
 }
 
+/*NAVBAR COLLAPSE*/
+
+.offcanvas.offcanvas-start.navbar-dark{
+    background-color: var(--background-nav-dark);
+}
+
+.offcanvas.offcanvas-start button{
+    border: none;
+    padding: none;
+    background: transparent;
+}
+
+.offcanvas.offcanvas-start button:focus{
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler svg{
+    color: var(--toggler-button-dark);
+}
