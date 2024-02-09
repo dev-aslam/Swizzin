@@ -1,0 +1,31 @@
+:root{
+    --background-body-light:#FBFBFB;
+    --background-nav-light:#F0F0F0;
+    --text-color-light:#1C1E21;
+    --mainheading-color-light:#444950;
+    --main-text-color-light:#444950;
+    --button-text-light:#fff;
+    --footer-text-light:#606770;
+
+    --background-body-dark:#011627;
+    --background-nav-dark:#010D18;
+    --mainheading-color-dark:#EBEDF0;
+    --main-text-color-dark:#EBEDF0;
+    --text-color-dark:#E3E3E3;
+    --button-text-dark:#000;
+    --footer-text-dark:#DADDE1;
+
+    --primary-color:#21C7A8;
+    --secondary-color:#24DBB9;
+    
+    --normal-text-size:16px;
+    --sub-headinng-text-size:20px;
+    --heading-text-size:44.8px;
+    --font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+    --xx-large-gap:80px;
+    --x-large-gap:48px;
+    --large-gap:32px;
+    --medium-gap:16px;
+    --small-gap:8px;
+}

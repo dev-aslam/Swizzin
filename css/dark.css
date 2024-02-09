@@ -1,0 +1,20 @@
+@import url('./variables.css');
+
+/* ======== NAVBAR =======*/
+
+.navbar.navbar-dark{
+    background-color: var(--background-nav-dark);
+}
+
+.navbar.navbar-dark .nav-link{
+    color: var(--text-color-dark);
+}
+
+.github-display{
+    display: none;
+}
+
+.darkToggleIcon{
+    display: none;
+}
+

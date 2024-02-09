@@ -1,0 +1,117 @@
+@import url('./light.css');
+@import url('./dark.css');
+@import url('./variables.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+}
+
+.container{
+    max-width: 1320px;
+    width: 100%;
+    padding: var(--medium-gap);
+    margin: auto;
+}
+
+/*Nav Bar*/
+
+.navbar{
+    padding: var(--small-gap) var(--medium-gap);
+    height: 60px;
+    background-color: var(--background-nav-light);
+}
+
+.navbar button{
+    border: none;
+    padding: none;
+}
+
+.navbar button:focus{
+    box-shadow: none;
+}
+
+.navbar-brand img{
+    height: 32px;
+}
+
+.display-selector{
+    display: none;
+}
+
+.nav-link{
+    font-size: var(--normal-text-size);
+    color: var(--text-color-light);
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+.nav-icon-container{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    align-items: center;
+    gap: 12px;
+    width: 92px;
+}
+
+.nav-icon-container img{
+    height: 24px;
+    width: 24px;
+}
+
+.github-light:hover{
+    opacity: 0.5;
+}
+
+/*Navbar collapse*/
+
+@media screen and (max-width: 992px){
+    .navbar{
+        justify-content: flex-start;
+    }
+
+    .display-selector{
+        display: block;
+    }
+    .nav-link{
+        color: var(--footer-text-light);
+    }
+    .nav-icon-container{
+        display: none;
+    }
+}
+
+
+.offcanvas.offcanvas-start{
+    width: 82%;
+}
+
+.offcanvas-header{
+    padding: var(--small-gap) var(--medium-gap);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    height: 60px;
+}
+
+.offcanvas-header img{
+    height: 32px;
+}
+
+.offcanvas-header>div{
+    display: flex;
+    gap: var(--medium-gap);
+}
+
+.nav-item .nav-link img{
+    height: 24px;
+    width: 24px;
+}
