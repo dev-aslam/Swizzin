@@ -411,7 +411,7 @@ ul.tabs .nav-link{
 
 @media screen and (max-width:576px) {
     .code code{
-        font-size: 12.9px;
+        font-size: 12px;
     }
 }
 
@@ -423,7 +423,7 @@ ul.tabs .nav-link{
 
 .code button{
     background-color: transparent;
-    border-radius: 0.4rem;
+    border-radius: 5px;
     border-color:transparent;
     padding: 4px;
 }
@@ -480,6 +480,12 @@ ul.tabs .nav-link{
 
 .question{
     margin: 0 var(--x-large-gap) var(--x-large-gap) 0;
+}
+
+@media screen and (max-width:992px) {
+    .question{
+        margin: 0 0 var(--x-large-gap) 0;
+    }
 }
 
 /*Resources*/
