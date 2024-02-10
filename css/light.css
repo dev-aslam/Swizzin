@@ -1,0 +1,147 @@
+@import url('./variables.css');
+
+
+/* Navbar */
+
+.navbar{
+    background-color: var(--background-nav-light);
+}
+
+.nav-link{
+    color: var(--text-color-light);
+}
+
+.darkToggleIcon{
+    display: none;
+}
+
+/*Navbar collapsed*/
+
+.navbar-toggler{
+    color: var(--toggler-button-light);
+}
+
+.cross-dark{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    .nav-link{
+        color: var(--footer-text-light);
+    }
+}
+
+.github-dark{
+    display: none;
+}
+
+/* Main content */
+
+.section-light{
+    background-color: var(--background-body-lightMode-light);
+}
+
+.section-dark{
+    background-color: var(--background-body-lightMode-dark);
+}
+
+.section-dark,
+.section-light{
+    color: var(--text-color-light);
+}
+
+/*Head Section*/
+
+#head-section h1,
+#head-section p{
+    color: var(--mainheading-color-light);
+}
+
+.green-btn,
+.blue-btn{
+    color: var(--button-text-light);
+}
+
+/*Image Container*/
+
+.head-image-container::after{
+    background-color: var(--background-body-lightMode-dark);
+}
+
+/*Feature Section*/
+
+.section-header-container h2{
+    color: var(--text-color-light);
+}
+
+.card{
+    background-color: var(--background-body-lightMode-light);
+}
+
+.card-body{
+    color: var(--text-color-light); 
+}
+
+/*Quick start section*/
+
+#quick-start p{
+    color: var(--text-color-light);
+}
+
+#quick-start a{
+    color:var(--button-text-light);
+}
+
+ul.tabs .nav-link{
+    color: #525860;
+}
+
+.code{
+    background-color: #011627;
+}
+
+.code code{
+    color: #d6deeb;
+}
+
+.code button{
+    color: #d6deed;
+    border: 1px solid rgba(214, 222, 235,0);
+}
+
+.code:hover svg,
+.code:hover button{
+    border-color: rgba(214, 222, 235,0.5);
+}
+
+.code button:hover svg,
+.code button:hover{
+    border-color: rgba(214, 222, 235,1);
+}
+
+
+/*Qusetions*/
+
+#questions p{
+    color: var(--text-color-light);
+}
+
+/*Footer*/
+
+footer{
+    color: var(--footer-text-light);
+    border-top: 1px solid var(--background-body-lightMode-light);
+}
+
+footer h5{
+    color: var(--text-color-light);
+}
+
+.footer-items a{
+    color: var(--footer-text-light);
+}
+
+.footer-logo,
+.footer-copyright{
+    color: var(--text-color-light);
+}

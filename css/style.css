@@ -1,4 +1,3 @@
-@import url('./dark.css');
 @import url('./variables.css');
 
 *{
@@ -16,12 +15,16 @@ a{
     width: 100%;
 }
 
-/* ======== NAVBAR END=======*/
+.display-none{
+    display: none;
+}
+
+
+/* ======== NAVBAR=======*/
 
 .navbar{
     padding: var(--small-gap) var(--medium-gap);
     height: 60px;
-    background-color: var(--background-nav-light);
 }
 
 .navbar button{
@@ -43,7 +46,6 @@ a{
 
 .nav-link{
     font-size: var(--normal-text-size);
-    color: var(--text-color-light);
     font-family: var(--font-family);
     font-weight: 500;
 }
@@ -76,10 +78,6 @@ a{
 
 /*Navbar collapse*/
 
-.navbar-toggler{
-    color: var(--toggler-button-light);
-}
-
 @media screen and (max-width: 992px){
     .navbar{
         justify-content: flex-start;
@@ -88,12 +86,20 @@ a{
     .display-selector{
         display: block;
     }
-    .nav-link{
-        color: var(--footer-text-light);
-    }
+
     .nav-icon-container{
         display: none;
     }
+}
+
+.offcanvas.offcanvas-start button{
+    border: none;
+    padding: none;
+    background: transparent;
+}
+
+.offcanvas.offcanvas-start button:focus{
+    box-shadow: none;
 }
 
 .offcanvas.offcanvas-start{
@@ -135,17 +141,8 @@ main{
     width: 100%;
 }
 
-.section-light{
-    background-color: var(--background-body-lightMode-light);
-}
-
-.section-dark{
-    background-color: var(--background-body-lightMode-dark);
-}
-
 .section-dark,
 .section-light{
-    color: var(--text-color-light);
     width: 100%;
 }
 
@@ -173,7 +170,6 @@ main{
 }
 
 #head-section h1{
-    color: var(--mainheading-color-light);
     font-size: 48px;
     margin-bottom: var(--medium-gap);
     font-weight: 700;
@@ -181,7 +177,6 @@ main{
 }
 
 #head-section p{
-    color: var(--mainheading-color-light);
     font-size: 24px;
     margin-bottom: var(--large-gap);
     text-align: center;
@@ -205,7 +200,6 @@ main{
 
 .green-btn,
 .blue-btn{
-    color: var(--button-text-light);
     margin: 0 var(--medium-gap);
     padding: var(--small-gap) var(--large-gap);
     line-height: 1.5;
@@ -271,7 +265,6 @@ main{
     position: absolute;
     width: 100%;
     height: 25%;
-    background-color: var(--background-body-lightMode-dark);
     bottom: 0;
 }
 
@@ -290,8 +283,8 @@ section{
 
 .section-header-container span{
     margin-bottom: var(--medium-gap);
-    display: inline-block;
     color: var(--primary-color);
+    display: inline-block;
     font-weight:700;
 }
 
@@ -299,7 +292,6 @@ section{
     font-size: var(--heading-text-size);
     max-width: 500px;
     font-weight: 700;
-    color: var(--text-color-light);
     margin-bottom: var(--medium-gap);
     word-spacing: -0.25rem;
 }
@@ -314,14 +306,13 @@ section{
     border-radius: 12px;
     border: none;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
-    background-color: var(--background-body-lightMode-light);
 }
 
 .card-header{
     background-color: transparent;
+    color: var(--secondary-color);
     border: none;
     padding: var(--medium-gap) var(--medium-gap) 0;
-    color: var(--secondary-color);
     font-size: var(--sub-heading-text-size);
 }
 
@@ -331,7 +322,6 @@ section{
 
 .card-body{
     padding: var(--medium-gap);
-    color: var(--text-color-light);
     line-height: 1.65;
 }
 
@@ -355,13 +345,11 @@ section{
 
 #quick-start p{
     margin-bottom: 20px;
-    color: var(--text-color-light);
     line-height: 1.65;
 }
 
 #quick-start a{
     background-color: var(--secondary-color);
-    color:var(--button-text-light);
     border: none;
 }
 
@@ -408,23 +396,17 @@ ul.tabs .nav-items:hover{
 ul.tabs .nav-link{
     padding: var(--medium-gap);
     list-style: none;
-    color: #525860;
     font-size: 16px;
     font-weight: 700;
 }
 
 .code{
-    background-color: #011627;
     padding: var(--medium-gap);
     border-radius: 0.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: var(--medium-gap);
-}
-
-.code code{
-    color: #d6deeb;
 }
 
 @media screen and (max-width:576px) {
@@ -442,9 +424,8 @@ ul.tabs .nav-link{
 .code button{
     background-color: transparent;
     border-radius: 0.4rem;
-    border: 1px solid rgb(214, 222, 235);
-    color: #d6deed;
     border-color:transparent;
+    padding: 4px;
 }
 
 .code button svg{
@@ -456,13 +437,11 @@ ul.tabs .nav-link{
 .code:hover svg,
 .code:hover button{
     opacity: 0.5;
-    border-color: rgba(214, 222, 235,0.5);
 }
 
 .code button:hover svg,
 .code button:hover{
     opacity: 1;
-    border-color: rgba(214, 222, 235,1);
 }
 
 .supported-platforms{
@@ -490,7 +469,6 @@ ul.tabs .nav-link{
 }
 
 #questions p{
-    color: var(--text-color-light);
     line-height: 1.65;
     margin-bottom:20px;
     text-align: justify;
@@ -543,13 +521,9 @@ ul.tabs .nav-link{
 
 footer{
     padding: var(--x-large-gap) 0;
-    color: var(--footer-text-light);
-    border-top: 1px solid var(--background-body-lightMode-light);
-    background-color: var(--background-body-lightMode-dark);
 }
 
 footer h5{
-    color: var(--text-color-light);
     font-size: var(--sub-heading-text-size);
     margin-bottom: var(--medium-gap);
     font-weight: 700;
@@ -573,7 +547,6 @@ footer .row .footer-col{
 }
 
 .footer-items a{
-    color: var(--footer-text-light);
     height: 32px;
 }
 
@@ -586,7 +559,6 @@ footer .row .footer-col{
 .footer-copyright{
     display: flex;
     justify-content: center;
-    color: var(--text-color-light);
 }
 
 .footer-logo img{
@@ -599,6 +571,3 @@ footer .row .footer-col{
 .footer-logo img:hover{
     opacity: 1;
 }
-
-/*Text media queries*/
-

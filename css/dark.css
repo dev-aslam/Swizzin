@@ -2,68 +2,148 @@
 
 /* ======== NAVBAR =======*/
 
-.navbar.navbar-dark{
+.navbar{
     background-color: var(--background-nav-dark);
 }
 
-.navbar.navbar-dark .nav-link{
+.nav-link{
     color: var(--text-color-dark);
 }
 
-.display-none{
+.lightToggleIcon{
     display: none;
-}
-
-.darkToggleIcon{
-    color: var(--toggler-button-dark);
 }
 
 /*NAVBAR COLLAPSE*/
 
-.offcanvas.offcanvas-start.navbar-dark{
-    background-color: var(--background-nav-dark);
-}
-
-.offcanvas.offcanvas-start button{
-    border: none;
-    padding: none;
-    background: transparent;
-}
-
-.offcanvas.offcanvas-start button:focus{
-    box-shadow: none;
-}
-
-.navbar-dark .navbar-toggler svg{
+.navbar-toggler{
     color: var(--toggler-button-dark);
 }
 
-
-/* ======== NAVBAR END=======*/
-
-/* ======= Main Content ======= */
-.section-light.dark-mode-light{
-    background-color: var(--background-body-dark-light);
+.offcanvas.offcanvas-start{
+    background-color: var(--background-nav-dark);
 }
 
-.section-dark.dark-mode-dark{
-    background-color: var(--background-body-dark-dark);
+.cross-light{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    .nav-link{
+        color: var(--footer-text-dark);
+    }
+}
+
+.github-light{
+    display: none;
+}
+
+/* ======= Main Content ======= */
+.section-light{
+    background-color: var(--background-body-darkMode-light);
+}
+
+.section-dark{
+    background-color: var(--background-body-darkMode-dark);
+}
+
+.section-dark,
+.section-light{
+    color: var(--text-color-dark);
 }
 
 /* Head Section*/
 
-.dark-mode-light .green-btn,
-.dark-mode-light .blue-btn{
+.green-btn,
+.blue-btn{
     color: var(--button-text-dark);
 }
 
-#head-section.dark-mode-light h1,
-#head-section.dark-mode-light p{
+#head-section h1,
+#head-section p{
     color: var(--mainheading-color-dark);
 }
 
-.dark-mode-light .head-image-container::after{
-    background-color: var(--background-body-dark-dark);
+/*Image Container*/
+
+.head-image-container::after{
+    background-color: var(--background-body-darkMode-dark);
 }
 
 /* Feature Section*/
+
+.section-header-container h2{
+    color: var(--text-color-dark);
+}
+
+.card{
+    background-color: var(--background-body-darkMode-light);
+}
+
+.card-body{
+    color: var(--text-color-dark); 
+}
+
+/*Quick start section*/
+
+#quick-start p{
+    color: var(--text-color-dark);
+}
+
+#quick-start a{
+    color:var(--button-text-dark);
+}
+
+ul.tabs .nav-link{
+    color: #FFF;
+}
+
+.code{
+    background-color:var(--background-body-lightMode-light);
+}
+
+.code code{
+    color: #403f53;
+}
+
+.code button{
+    color: #403f53;
+    border: 1px solid rgba(96, 103, 112,0);
+}
+
+.code:hover svg,
+.code:hover button{
+    border-color: rgba(96, 103, 112,0.5);
+}
+
+.code button:hover svg,
+.code button:hover{
+    border-color: rgba(96, 103, 112,1);
+}
+
+
+/*Qusetions*/
+
+#questions p{
+    color: var(--text-color-dark);
+}
+
+/*Footer*/
+
+footer{
+    color: var(--footer-text-dark);
+    border-top: 1px solid var(--background-body-darkMode-light);
+}
+
+footer h5{
+    color: var(--text-color-dark);
+}
+
+.footer-items a{
+    color: var(--footer-text-dark);
+}
+
+.footer-logo,
+.footer-copyright{
+    color: var(--text-color-dark);
+}
